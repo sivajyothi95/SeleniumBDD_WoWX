@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3689381415,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify customer should be able to add 2 items to the cart and place an order",
+        "description": "",
+        "id": "ecommerce-placeorder;verify-customer-should-be-able-to-add-2-items-to-the-cart-and-place-an-order",
+        "after": [
+          {
+            "result": {
+              "duration": 779254434,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10791015563,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to automation practice website",
+            "match": {
+              "location": "PlaceOrderStepDef.iNavigateToAutoPracticeWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5407743366,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add two products to cart",
+            "match": {
+              "location": "PlaceOrderStepDef.addTwoProductsToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13261529994,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be able to place the order successfully",
+            "match": {
+              "location": "PlaceOrderStepDef.iShouldBeAbleToPlaceTheOrderSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Ecommerce_PlaceOrder",
+    "description": "This feature helps to validate adding items to cart and placing the order.",
+    "id": "ecommerce-placeorder",
+    "keyword": "Feature",
+    "uri": "Ecommerce_PlaceOrder.feature"
+  }
+]
